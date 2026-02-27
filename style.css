@@ -121,8 +121,8 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, rgba(10, 25, 40, 0.95), rgba(10, 25, 40, 0.85)), 
-                url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+    background: linear-gradient(135deg, rgba(10, 25, 40, 0.95), rgba(10, 25, 40, 0.85)),
+        url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -262,6 +262,7 @@ section {
 }
 
 @media (min-width: 480px) {
+
     .hero-buttons .btn-dorado,
     .hero-buttons .btn-outline {
         width: auto;
@@ -460,7 +461,7 @@ section {
 .topico {
     margin: 12px 0;
     padding: 12px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(255, 255, 255, 0.02);
     border-radius: 10px;
     border-left: 3px solid #C6A43F;
 }
@@ -832,7 +833,7 @@ section {
 .form-inscripcion {
     text-align: center;
     padding: 25px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(255, 255, 255, 0.02);
     border-radius: 15px;
     height: 100%;
     display: flex;
@@ -1070,51 +1071,96 @@ footer {
     .container {
         padding: 0 15px;
     }
-    
+
     section {
         padding: 40px 0;
     }
-    
+
     .titulo-seccion {
         font-size: 2em;
         margin-bottom: 30px;
     }
-    
+
     .comite-card {
         padding: 20px;
     }
-    
+
     .topico {
         padding: 10px;
         margin: 10px 0;
     }
-    
+
     .topico p {
         font-size: 0.85em;
     }
-    
+
     .info-card {
         padding: 20px 15px;
     }
-    
+
     .beneficio-item {
         padding: 25px 20px;
     }
-    
+
     .contacto-grid {
         padding: 20px;
         gap: 25px;
     }
-    
+
     .form-inscripcion {
         padding: 20px;
     }
-    
+
     .form-titulo {
         font-size: 1.5em;
     }
-    
+
     .contacto-titulo {
         font-size: 1.5em;
+    }
+}
+
+/* Actualizaciones para el cronograma */
+.cronograma-fechas {
+    text-align: center;
+    color: #C6A43F;
+    font-size: 1.2em;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+    .cronograma-fechas {
+        font-size: 1.3em;
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Ajuste para la actividad destacada de clausura */
+.actividad-destacada {
+    border-left-color: #C6A43F;
+    background: rgba(198, 164, 63, 0.15);
+    border-left-width: 4px;
+}
+
+/* Mejora en la visualización de horarios en móvil */
+@media (max-width: 480px) {
+    .actividad-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .actividad-hora {
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+
+    .cronograma-fechas {
+        font-size: 1.1em;
+        margin-top: -20px;
+        margin-bottom: 25px;
     }
 }
