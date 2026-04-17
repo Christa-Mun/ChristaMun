@@ -1557,6 +1557,7 @@ footer {
     font-size: 0.8em;
     color: #808080;
 }
+
 /* Sección Protocolo Oficial */
 .bg-protocolo {
     background: linear-gradient(135deg, #0A1928 0%, #0B1A2A 100%);
@@ -1847,15 +1848,16 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .protocolo-seccion h4 {
         font-size: 1em;
     }
-    
+
     .protocolo-seccion ul li {
         font-size: 0.85em;
     }
 }
+
 /* Footer */
 footer {
     background: #051016;
@@ -1915,7 +1917,7 @@ footer::before {
 
 .footer-logo-text {
     font-size: 0.7em;
-    color: #808080;
+    color: #ffffff;
     text-align: center;
     line-height: 1.3;
     max-width: 180px;
@@ -1967,7 +1969,7 @@ footer::before {
 
 /* Información del Footer */
 .footer-info p {
-    color: #808080;
+    color: #ffffff;
     margin: 8px 0;
     font-size: 0.85em;
 }
@@ -1982,7 +1984,7 @@ footer::before {
 .footer-lema {
     margin-top: 10px !important;
     font-size: 0.8em !important;
-    color: #606060 !important;
+    color: #ffffff !important;
 }
 
 @media (min-width: 768px) {
@@ -1994,7 +1996,7 @@ footer::before {
 
 .footer-credito {
     font-size: 0.75em !important;
-    color: #505050 !important;
+    color: #bbb6b6 !important;
     margin-top: 10px !important;
 }
 
@@ -2003,38 +2005,38 @@ footer::before {
     footer {
         padding: 30px 0 20px;
     }
-    
+
     .footer-logos {
         gap: 20px;
         margin-bottom: 25px;
     }
-    
+
     .footer-logo-img {
         height: 50px;
     }
-    
+
     .cinu-logo {
         height: 45px;
     }
-    
+
     .footer-logo-text {
         font-size: 0.6em;
         max-width: 140px;
     }
-    
+
     .footer-logo-divider {
         width: 30px;
     }
-    
+
     .footer-logo-divider i {
         font-size: 0.8em;
     }
-    
+
     .footer-aval {
         margin-bottom: 25px;
         padding: 12px 15px;
     }
-    
+
     .aval-text {
         font-size: 0.75em;
         gap: 8px;
@@ -2046,12 +2048,12 @@ footer::before {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .footer-logo-divider {
         width: 60px;
         height: 2px;
     }
-    
+
     .footer-logo-divider i {
         position: static;
         transform: none;
@@ -2060,31 +2062,32 @@ footer::before {
         background: transparent;
         padding: 0;
     }
-    
+
     .footer-logo-item {
         flex-direction: row;
         gap: 15px;
         text-align: left;
     }
-    
+
     .footer-logo-text {
         text-align: left;
         max-width: none;
     }
-    
+
     .footer-logo-img {
         height: 45px;
     }
-    
+
     .cinu-logo {
         height: 40px;
     }
-    
+
     .aval-text {
         flex-direction: column;
         gap: 8px;
     }
 }
+
 /* Logos Institucionales en Hero */
 .hero-logos-superior {
     display: flex;
@@ -2117,6 +2120,7 @@ footer::before {
     transition: transform 0.3s ease;
     /* Eliminar filter: brightness(0) invert(1); */
 }
+
 .hero-logo-christamun {
     height: 45px;
     width: auto;
@@ -2194,27 +2198,27 @@ footer::before {
         padding: 12px 20px;
         margin-bottom: 25px;
     }
-    
+
     .hero-logo-cinu {
         height: 35px;
     }
-    
+
     .hero-logo-christamun {
         height: 35px;
     }
-    
+
     .hero-logo-label {
         font-size: 0.6em;
     }
-    
+
     .hero-logo-divider {
         width: 30px;
     }
-    
+
     .hero-logo-divider i {
         font-size: 0.8em;
     }
-    
+
     .hero-aval-badge {
         margin-top: 25px;
         padding: 10px 15px;
@@ -2231,12 +2235,12 @@ footer::before {
         padding: 15px;
         width: 100%;
     }
-    
+
     .hero-logo-divider {
         width: 60px;
         height: 2px;
     }
-    
+
     .hero-logo-divider i {
         position: static;
         transform: none;
@@ -2245,21 +2249,56 @@ footer::before {
         background: transparent;
         padding: 0;
     }
-    
+
     .hero-logo-item {
         flex-direction: row;
         gap: 12px;
         width: 100%;
         justify-content: center;
     }
-    
+
     .hero-logo-label {
         font-size: 0.65em;
     }
-    
+
     .hero-aval-badge {
         flex-direction: column;
         gap: 8px;
         border-radius: 20px;
+    }
+}
+
+/* Estilo para CHRISTAMUN dividido */
+.hero-christamun-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5em;
+    margin: 15px 0 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    line-height: 1.2;
+    word-break: break-word;
+    letter-spacing: 2px;
+}
+
+.christa {
+    color: rgb(30, 70, 130);
+    /* Azul característico */
+}
+
+.mun {
+    color: #C6A43F;
+    /* Dorado característico */
+}
+
+.year-2026 {
+    color: #C6A43F;
+    /* Dorado */
+}
+
+@media (min-width: 768px) {
+    .hero-christamun-title {
+        font-size: 5em;
+        margin: 20px 0 10px;
+        letter-spacing: 4px;
     }
 }
